@@ -1,4 +1,9 @@
 package hostCalculator.HostCalculatorSpring.domain.member.service;
 
-public class MemberService {
+import hostCalculator.HostCalculatorSpring.domain.member.dto.PhoneNumberValidationRequestDto;
+import hostCalculator.HostCalculatorSpring.domain.member.dto.PhoneNumberValidationResponseDto;
+
+public interface MemberService {
+
+    PhoneNumberValidationResponseDto PhoneNumberDuplicationValid(PhoneNumberValidationRequestDto requestDto);
 }
